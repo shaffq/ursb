@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/915317e5b1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .dropdown-menu {
+            width: max-content;
+        }
+
+        .overlay {
+            margin-top: -90px;
+            z-index: 1;
+        }
+
+        .cover {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+            object-position: center 50%;
+        }
+
+        .cover img {
+            max-width: 100%;
+            z-index: 1;
+        }
+
+        .over {
+            z-index: 100;
+        }
+
+        p,
+        a,
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-team {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .section-team .header-section {
+            margin-bottom: 50px;
+        }
+
+        .section-team .single-person {
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        /* .section-team .single-person:hover {
+            background: linear-gradient(to right, #016cec, #00b5f7);
+        } */
+
+        .section-team .single-person .person-image {
+            position: relative;
+            margin-bottom: 50px;
+            border-radius: 50%;
+            border: 4px dashed transparent;
+            transition: padding .3s;
+        }
+
+        .section-team .single-person:hover .person-image {
+            padding: 12px;
+            border: 4px dashed #F29900;
+        }
+
+        .section-team .single-person .person-image img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .section-team .single-person .person-info .full-name {
+            margin-bottom: 10px;
+        }
+
+        .section-team .single-person .person-info .speciality {
+            text-transform: uppercase;
+            color: #495057;
+        }
+
+        /* .section-team .single-person:hover .full-name,
+        .section-team .single-person:hover .speciality {
+            color: #fff;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid bg-white sticky-top">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-2 row shadow-sm">
+            <a href="index.html" class="col">
+                <img src="img/unikl.png" class="img-fluid" alt="" style="max-width: 20%;">
+            </a>
+            <ul class="nav col col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link link-dark">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html" class="nav-link link-dark">About Us</a></li>
+                        <li><a href="visionandmission.html" class="nav-link link-dark">Vision & Mission</a></li>
+                        <li><a href="corporate_information.html" class="nav-link link-dark">Corporate Information</a>
+                        </li>
+                        <li><a href="competitive_advantage.html" class="nav-link link-dark">Competitive Advantage</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#1" class="nav-link link-dark">Auxiliary Businesses</a></li>
+                        <li><a href="services.html#2" class="nav-link link-dark">Digital Technology</a></li>
+                        <li><a href="services.html#3" class="nav-link link-dark">Engineering & Technical Services</a>
+                        </li>
+                        <li><a href="services.html#4" class="nav-link link-dark">Equipment Supply & Support</a></li>
+                        <li><a href="services.html#5" class="nav-link link-dark">Management Services</a></li>
+                        <li><a href="services.html#6" class="nav-link link-dark">Technology Commercialization</a></li>
+                        <li><a href="services.html#7" class="nav-link link-dark">URSB Marine</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Merchandise
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://uniseri.my/" class="nav-link link-dark">UniSeri</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="col d-grid gap-2 d-flex justify-content-end align-items-center">
+                <a href="contact.html" class="btn btn-primary px-5">Contact Us</a>
+            </div>
+        </header>
+    </div>
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card bg-dark border-0 px-0">
+                        <img src="img/index2.jpg" class="img-fluid p-0 m-0 cover opacity-50" alt="">
+                    </div>
+                    <div class="row overlay">
+                        <div class="col-2">
+                        </div>
+                        <div class="col">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-5">
+                                    <div class="row">
+                                        <h6 class="text-secondary">Name of Company</h6>
+                                        <h4 class="fw-semibold">UNIKL RESOURCES SDN. BHD.</h4>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col">
+                                            <div class="card border-0" style="background-color: #dee2e6;">
+                                                <div class="card-body px-5">
+                                                    <div class="row">
+                                                        <div class="col text-center border-end">
+                                                            <div class="h6">Registration No.</div>
+                                                            <h5 class="mb-0">552568-X</h5>
+                                                        </div>
+                                                        <div class="col text-center">
+                                                            <div class="h6">Date of Incorporation</div>
+                                                            <h5 class="mb-0">21 OGOS 2006</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Nature of Business</div>
+                                        <div class="col fw-semibold">Commercial Arm and Income Generating Activities of
+                                            UniKL</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Business Address</div>
+                                        <div class="col fw-semibold">1016, JALAN SULTAN ISMAIL 50250 KUALA LUMPUR</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Communications</div>
+                                        <div class="col fw-semibold">TINGKAT 16, BANDAR WAWASAN, MENARA 3,UNIVERSITI
+                                            KUALA LUMPUR
+                                            <br>Level 16, Vision City, Tower 3, UNIVERSITI KUALA LUMPUR
+                                            <br>Tel: 603 2175 4000 Fax: 603 2175 4457
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Authorized Capital</div>
+                                        <div class="col fw-semibold">RM 5,000,000.00</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Paid-Up Capital</div>
+                                        <div class="col fw-semibold">RM 5,000,000.00</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Shareholders</div>
+                                        <div class="col fw-semibold">UNIVERSITI TEKNIKAL MARA SDN BHD</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Directors</div>
+                                        <div class="col fw-semibold">VACANT (Pengerusi)<br>
+                                            YBHG. DATUK SALMAH HAYATI BINTI GHAZALI<br>
+                                            YBHG. PROF. DATO HJ AHMAD ZAHIR BIN HJ MOKHTAR<br>
+                                            YBHG. TUAN HJ DR MAHADI BIN SULAIMAN
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">General Manager</div>
+                                        <div class="col fw-semibold">ANUAR BIN BERAHIM</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Company Secretary</div>
+                                        <div class="col fw-semibold">SHAHRIZAT BT OTHMAN (MAICSA 0764744)</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Auditor</div>
+                                        <div class="col fw-semibold">BAL & PARTNERS PLT</div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-4 h6 text-secondary">Banking Detail</div>
+                                        <div class="col fw-semibold">CIMB Bank<br>
+                                            Dang Wangi Branch, Kuala Lumpur<br>
+                                            No Account: 8001-1184-47<br>
+                                            <br>
+                                            AFFIN BANK<br>
+                                            Raja Chulan Branch, Kuala Lumpur<br>
+                                            No Account: 1050-2004-3654
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-team">
+            <div class="container">
+                <!-- Start Header Section -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="header-section">
+                            <h4 style="color: #00008F;">Let's meet our</h4>
+                            <h1 class="fw-semibold">Board of Directors</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- / End Header Section -->
+                <div class="row px-5">
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mx-auto">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">YBhg. Dato Suhaili Abdul Rahman</h4>
+                                <span class="speciality">Chairman</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                </div>
+                <div class="row px-5">
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/2.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Dato Dr. Afifi Al-Akiti</h4>
+                                <span class="speciality">Member of BOD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/3.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Datuk Dr. Roziah Omar</h4>
+                                <span class="speciality">Member of BOD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">En. Mohamad Nor Sazelim Bin Mohamad</h4>
+                                <span class="speciality">Alternate Member of BOD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold"></h4>
+                                <span class="speciality">Vacant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                </div>
+            </div>
+        </section>
+        <section class="section-team">
+            <div class="container">
+                <!-- Start Header Section -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="header-section">
+                            <h4 style="color: #00008F;">UniKL Resources Sdn. Bhd.</h4>
+                            <h1 class="fw-semibold">Management Team</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- / End Header Section -->
+                <div class="row px-5">
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mx-auto">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Anuar Berahim</h4>
+                                <span class="speciality">General Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                </div>
+                <div class="row px-5">
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Nur Adibah Ahmad Yahya</h4>
+                                <span class="speciality">Finance & Administration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Mohd Radzeen Zulkifli</h4>
+                                <span class="speciality">Project Evaluation & Monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Nur Muhammad Insan Jalil</h4>
+                                <span class="speciality">Engineering & Technical Services</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Mohd Faizal Sulaiman</h4>
+                                <span class="speciality">Management Services</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                </div>
+                <div class="row px-5">
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Ir. Mohd Nazri Mohd Jamil</h4>
+                                <span class="speciality">URSB Marine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Hjh. Munirah Husain</h4>
+                                <span class="speciality">Auxiliary Businesses</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Suhaila Mohd Radzi</h4>
+                                <span class="speciality">Technology Commercialization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold">Zalina Noor Mohd Ali</h4>
+                                <span class="speciality">Equipment & Supply Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                </div>
+                <div class="row px-5">
+                    <!-- Start Single Person -->
+                    <div class="col-sm-6 col-lg-4 col-xl-3 mx-auto">
+                        <div class="single-person">
+                            <div class="person-image">
+                                <img src="img_profile/blank.jpg" alt="">
+                            </div>
+                            <div class="person-info">
+                                <h4 class="full-name fw-semibold"></h4>
+                                <span class="speciality">Digital Technology (Vacant)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / End Single Person -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>UNIKL RESOURCES SDN. BHD.</h6>
+                    <p class="text-justify">Universiti Kuala Lumpur (UniKL)<br>
+                        1016, Jalan Sultan Ismail, 50250 Kuala Lumpur<br>
+                        +603 - 2175 4000<br>
+                        ursb@unikl.edu.my</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="services.html#1" class="text-decoration-none">Auxiliary Businesses</a></li>
+                        <li><a href="services.html#2" class="text-decoration-none">Digital Technology</a></li>
+                        <li><a href="services.html#3" class="text-decoration-none">Engineering & Technical Services</a>
+                        </li>
+                        <li><a href="services.html#4" class="text-decoration-none">Equipment Supply & Support</a></li>
+                        <li><a href="services.html#5" class="text-decoration-none">Management Services</a></li>
+                        <li><a href="services.html#6" class="text-decoration-none">Technology Commercialization</a></li>
+                        <li><a href="services.html#7" class="text-decoration-none">URSB Marine</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li><a href="" class="text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved
+                        <!-- <a href="#">Scanfcode</a>. -->
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
